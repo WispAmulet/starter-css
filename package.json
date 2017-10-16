@@ -1,0 +1,30 @@
+{
+  "name": "starter-css",
+  "version": "0.0.1",
+  "description": "A starter folder to write some css things!",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "yly",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "concurrently": "^3.5.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.12.1",
+    "postcss-loader": "^2.0.8",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.7.1"
+  },
+  "dependencies": {}
+}
