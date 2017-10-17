@@ -36,7 +36,7 @@ const config = {
   },
   devtool: 'source-map',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'public/dist/'),
     filename: '[name].bundle.js'
   },
   module: {
