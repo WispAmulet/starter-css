@@ -1,5 +1,9 @@
 import '../scss/style.scss';
 
-const h2 = document.querySelector('h2');
+// const h2 = document.createElement('h2');
 
-h2.classList.add('pinkFont');
+// h2.innerHTML = 'Hello Webpack!';
+
+// h2.classList.add('pinkFont');
+
+// document.body.appendChild(h2);

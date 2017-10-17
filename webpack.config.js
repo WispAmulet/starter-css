@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+// const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const autoprefixer = require('autoprefixer');
 
 const javascript = {
@@ -35,6 +37,9 @@ const config = {
     App: './src/js/app.js'
   },
   devtool: 'source-map',
+  devServer: {
+    contentBase: './public'
+  },
   output: {
     path: path.resolve(__dirname, 'public/dist/'),
     filename: '[name].bundle.js'
@@ -44,6 +49,8 @@ const config = {
   },
   plugins: [
     // uglify,
+    new CleanWebpackPlugin(['public']),
+    // new HtmlWebpackPlugin(),
     new ExtractTextPlugin('style.css')
   ]
 };
