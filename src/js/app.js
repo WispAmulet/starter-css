@@ -1,9 +1,12 @@
 import '../scss/style.scss';
 
-// const h2 = document.createElement('h2');
+const h2 = document.querySelector('h2');
 
-// h2.innerHTML = 'Hello Webpack!';
+const btn = document.createElement('button');
+btn.innerHTML = 'Click';
+document.body.appendChild(btn);
 
-// h2.classList.add('pinkFont');
-
-// document.body.appendChild(h2);
+btn.addEventListener('click', () => {
+  h2.innerHTML = 'Hello Webpack!';
+  h2.classList.add('red');
+});
