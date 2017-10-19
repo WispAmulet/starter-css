@@ -1,13 +1,5 @@
 # README
 
-## Suggestion
-
-Install [eslint](https://eslint.org/) and [airbnb rule](https://www.npmjs.com/package/eslint-config-airbnb) globally first
-
-```command
-npm i -g eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react
-```
-
 ```
 starter
 |- .eslintrc
@@ -71,4 +63,24 @@ starter
     |- style.css
     |- style.css.map
   |- index.html
+```
+
+## Suggestion
+
+Install [eslint](https://eslint.org/) and [airbnb rule](https://www.npmjs.com/package/eslint-config-airbnb) globally first.
+
+```command
+npm i -g eslint eslint-config-airbnb eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-react
+```
+
+Maybe install some eslint plugins if you like.
+
+```command
+npm i -g eslint-plugin-html eslint-plugin-markdown
+```
+
+So you can lint javascript in html and markdown files like this.
+
+```command
+eslint index.html
 ```
