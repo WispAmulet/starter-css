@@ -27,6 +27,8 @@ starter
   |- index.html
 ```
 
+*Delete _normalize.scss if you don't need it.*
+
 ## Usage
 
 ```command
