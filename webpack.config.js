@@ -20,11 +20,16 @@ const javascript = {
 //   }
 // };
 
+const css = {
+  loader: 'css-loader',
+  options: { minimize: true }
+};
+
 const style = {
   test: /\.(scss)$/,
   use: ExtractTextPlugin.extract({
     fallback: 'style-loader',
-    use: ['css-loader', 'sass-loader']
+    use: [css, 'sass-loader']
   })
 };
 
@@ -53,7 +58,7 @@ const config = {
     rules: [javascript, style, html]
   },
   plugins: [
-    // uglify,
+    uglify,
     new CleanWebpackPlugin(['public']),
     new ExtractTextPlugin('dist/style.css'),
     new HtmlWebpackPlugin({

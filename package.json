@@ -14,6 +14,10 @@
     "eslint"
   ],
   "author": "yly",
+  "repository": {
+    "type": "github",
+    "url": "git@github.com:WispAmulet/starter-simple.git"
+  },
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.0",
