@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-// const autoprefixer = require('autoprefixer');
 
 const javascript = {
   test: /\.(js)$/,
@@ -13,16 +12,9 @@ const javascript = {
   }]
 };
 
-// const postcss = {
-//   loader: 'postcss-loader',
-//   options: {
-//     plugins() { return [autoprefixer({ browsers: 'last 3 versions' })]; }
-//   }
-// };
-
 const css = {
   loader: 'css-loader',
-  options: { minimize: true }
+  // options: { minimize: true } // uncomment this line to minimize the output css file
 };
 
 const style = {
@@ -58,7 +50,7 @@ const config = {
     rules: [javascript, style, html]
   },
   plugins: [
-    uglify,
+    // uglify, // uncomment this line to uglify the output js file
     new CleanWebpackPlugin(['public']),
     new ExtractTextPlugin('dist/style.css'),
     new HtmlWebpackPlugin({
